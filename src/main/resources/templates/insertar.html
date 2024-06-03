@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<title>Alta de clientes</title>
+</head>
+
+<body>
+	<h1>Insertar un nuevo cliente</h1>
+	<form th:action="@{/insertarSubmit}" method="post">
+		Cif:
+		<input type="text" name="cif" id="cif">
+		<br>
+		Nombre:
+		<input type="text" name="nombre" id="nombre">
+		<br>
+		Saldo:
+		<input type="number" name="saldo" id="saldo">
+		<input type="submit" value="insertar">
+	</form>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Modificar cliente</title>
+</head>
+<body>
+	<h1>Modificar un cliente</h1>
+	<form th:action="@{modificarSubmit}" method="post" th:object="${cliente}">
+		Id cliente:
+		<input type="text" name="idCliente" id="idCliente" th:value="*{idCliente}">
+		Cif:
+		<input type="text" name="cif" id="cif" th:value="*{cif}">
+		Nombre:
+		<input type="text" name="nombre" id="nombre" th:value="*{nombre}">
+		Saldo:
+		<input type="text" name="saldo" id="saldo" th:value="*{saldo}">
+		<input type="submit" value="Modificar">
+	</form>
+
+</body>
+</html>
+
